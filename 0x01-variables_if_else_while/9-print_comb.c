@@ -1,21 +1,25 @@
 #include <stdio.h>
 
-void putchar_combinations(int n, int max_digit) {
-    if (n > max_digit) {
-        return;
-    }
+/**
+ * main - Prints all possible combinations of single-digit numbers.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	int num;
 
-    putchar('0' + n);
+	for (num = 0; num <= 9; num++)
+	{
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		
+		putchar(',');
+		putchar(' ');
+	}
 
-    if (n < max_digit) {
-        putchar(',');
-        putchar(' ');
-        putchar_combinations(n + 1, max_digit);
-    }
-}
+	putchar('\n');
 
-int main() {
-    putchar_combinations(0, 9);
-    putchar('\n');
-    return 0;
+	return (0);
 }
