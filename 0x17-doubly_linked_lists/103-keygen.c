@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * f4 - finds the biggest number
+ * main - create a key depending on a username for crackme5 file 
+ * @argc: number of arguments that have passed 
+ * @argv: arguments that have passed to main
  *
- * @usrn: username
- * @len: length of username
- * Return: the biggest number
+ * Return: 0 on success, 1 on fail
  */
 int main(int argc, char *argv[])
 {
