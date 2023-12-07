@@ -24,7 +24,11 @@ int main(void)
 }
 
 
-
+/**
+  * is_palindrome - A function that checks if list is a palindrome.
+  * @num: The number to check.
+  * Return: 1 if number is a palindrome, or 0 if not.
+  */
 char is_palindrome(unsigned int num)
 {
 	unsigned int reverse = 0, rem = 0, n = num;
@@ -39,4 +43,3 @@ char is_palindrome(unsigned int num)
 		return (1);
 	return (0);
 }
-
