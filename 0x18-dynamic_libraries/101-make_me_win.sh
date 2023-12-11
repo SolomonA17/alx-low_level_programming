@@ -1,3 +1,3 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/SolomonA17/alx-low_level_programming/master/0x18-dynamic_libraries/librand.so -O ../librand.so
-export LD_PRELOAD="../librand.so"
+wget -O /tmp/win.so https://github.com/SolomonA17/alx-low_level_programming/raw/master/0x17-dynamic_libraries/win.so
+export LD_PRELOAD=/tmp/win.so
