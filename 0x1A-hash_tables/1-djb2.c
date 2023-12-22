@@ -4,9 +4,10 @@
 #include "hash_tables.h"
 
 /**
- * hash_djb2 - implementing the djb2 algorithm.
- * @str: char pointer
- * Return: a pointer to the hash table or null on error
+ * Generates a hash value for a given string using the djb2 algorithm.
+ *
+ * @param str: The string to be hashed, represented as an unsigned character array.
+ * @return: An unsigned long integer representing the calculated hash value.
  */
 
 unsigned long int hash_djb2(const unsigned char *str)
