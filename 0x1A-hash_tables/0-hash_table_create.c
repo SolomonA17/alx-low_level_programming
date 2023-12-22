@@ -4,10 +4,9 @@
 #include "hash_tables.h"
 
 /**
- * Conjures a brand new hash table with the specified capacity.
- *
- * @param size: The desired number of buckets in the table (can't be zero!).
- * @return: A pointer to the freshly crafted hash table, or null on failure.
+ * hash_table_create - Make a hash table
+ * @size: integer
+ * Return: Pointer to the hash table or NULL on error
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
